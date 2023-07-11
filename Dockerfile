@@ -1,8 +1,8 @@
-FROM node:12-alpine
+FROM node:14-alpine
 
 WORKDIR /usr/src/app
 
-RUN apk update && apk add python3 make g++
+RUN apk update && apk add python3 make g++ git
 
 RUN npm install -g node-gyp
 
