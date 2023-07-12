@@ -9,9 +9,9 @@ Node-RED was modified in order to increase the system’s observability and enha
 
 This modified tool provides as main features:
 - The ability to show the information which flows through the nodes using different visual metaphors.
-  
+
 - The injection of messages at runtime.
-  
+
 - Enhanced debugging capabilities through breakpoints on each node.
 
 

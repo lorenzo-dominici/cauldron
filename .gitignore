@@ -7,7 +7,9 @@
 .sessions.json
 .settings
 .tern-project
+.i18n-editor-metadata
 *.backup
+*.bak
 *_cred*
 coverage
 credentials.json
@@ -22,4 +24,6 @@ packages/node_modules/@node-red/editor-client/public
 !test/**/node_modules
 docs
 !packages/node_modules/**/docs
-.idea
+.vscode
+.nyc_output
+sync.ffs_db
