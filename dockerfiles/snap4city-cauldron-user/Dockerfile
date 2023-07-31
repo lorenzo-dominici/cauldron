@@ -33,6 +33,3 @@ RUN cp -r cauldron/packages/node_modules/. /usr/src/node-red/node_modules/
 
 USER node-red
 WORKDIR /usr/src/node-red
-EXPOSE 1880
-
-ENTRYPOINT [ "sh", "/usr/src/node-red/start.sh" ]
