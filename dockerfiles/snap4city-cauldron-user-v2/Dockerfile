@@ -10,7 +10,7 @@ RUN npm install -g node-gyp
 
 # Install additional packages from github
 WORKDIR /usr/src
-RUN git clone -b snap4city-v3 https://github.com/lorenzo-dominici/cauldron
+RUN git clone -b node-red-v2 https://github.com/lorenzo-dominici/cauldron
 # RUN git clone https://github.com/disit/snap4city
 # RUN git clone https://github.com/disit/node-red-contrib-snap4city-user
 # RUN git clone https://github.com/disit/node-red-contrib-snap4city-developer
@@ -18,10 +18,10 @@ RUN git clone -b snap4city-v3 https://github.com/lorenzo-dominici/cauldron
 
 
 # Build cauldron
-WORKDIR /usr/src/cauldron
-RUN npm install
-RUN npm run build
-WORKDIR /usr/src
+#WORKDIR /usr/src/cauldron
+#RUN npm install
+#RUN npm run build
+#WORKDIR /usr/src
 
 #copy modules
 # RUN cp -r cauldron/. /usr/src/node-red/

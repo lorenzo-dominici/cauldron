@@ -1,4 +1,4 @@
-FROM disitlab/snap4city-nodered-v2.2.2-basic:v7
+FROM disitlab/snap4city-nodered-v2.2.2-adv:v5
 
 # permissions
 USER root
@@ -10,12 +10,7 @@ RUN npm install -g node-gyp
 
 # Install additional packages from github
 WORKDIR /usr/src
-RUN git clone -b snap4city-v3 https://github.com/lorenzo-dominici/cauldron
-# RUN git clone https://github.com/disit/snap4city
-# RUN git clone https://github.com/disit/node-red-contrib-snap4city-user
-# RUN git clone https://github.com/disit/node-red-contrib-snap4city-developer
-# RUN git clone https://github.com/disit/node-red-contrib-snap4city-d3-dashboard-widgets
-
+RUN git clone -b node-red-v2 https://github.com/lorenzo-dominici/cauldron
 
 # Build cauldron
 WORKDIR /usr/src/cauldron
