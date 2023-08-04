@@ -21,6 +21,7 @@ WORKDIR /usr/src
 #copy modules
 # RUN cp -r cauldron/. /usr/src/node-red/
 RUN cp -r cauldron/packages/node_modules/@node-red /usr/src/node-red/node_modules/
+RUN cp -r cauldron/node_modules/node-watch /usr/src/node-red/node_modules/
 #RUN cp -r snap4city/nodered-snap4city-microservices/snap4city-user-authentication /usr/src/node-red/node_modules/
 #RUN cp -r node-red-contrib-snap4city-user /usr/src/node-red/node_modules/
 #RUN cp -r node-red-contrib-snap4city-developer /usr/src/node-red/node_modules/
