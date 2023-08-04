@@ -1,4 +1,4 @@
-FROM disitlab/snap4city-nodered-v2.2.2-adv:v5
+FROM disitlab/snap4city-nodered-v2.2.2-adv:v10
 
 # permissions
 USER root
