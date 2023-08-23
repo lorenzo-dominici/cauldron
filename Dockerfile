@@ -9,3 +9,5 @@ RUN npm install -g node-gyp
 COPY . .
 
 RUN npm install
+
+ENTRYPOINT [ "sh", "./start.sh" ]
