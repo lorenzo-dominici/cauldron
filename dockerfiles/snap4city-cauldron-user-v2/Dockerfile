@@ -18,10 +18,10 @@ RUN git clone -b snap4city-cauldron-v2 https://github.com/lorenzo-dominici/cauld
 
 
 # Build cauldron
-#WORKDIR /usr/src/cauldron
-#RUN npm install
-#RUN npm run build
-#WORKDIR /usr/src
+WORKDIR /usr/src/cauldron
+RUN npm install
+RUN npm run build
+WORKDIR /usr/src
 
 #copy modules
 # RUN cp -r cauldron/. /usr/src/node-red/
